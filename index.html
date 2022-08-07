@@ -384,7 +384,7 @@
       </div>      
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="18px" height="18px">
@@ -428,7 +428,7 @@
             <span class="modal-form-input-desc">Коментар</span>
             <textarea name="user-message" class="modal-form-message" placeholder="Введіть текст"></textarea>
           </label>
-          <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check ">
+          <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check visually-hidden">
           <label for="user-policy" class="modal-form-check-desc">
             <span class="modal-form-icon-wrapper">
               <svg class="modal-form-icon" width="16px" height="15px">
@@ -438,7 +438,7 @@
                 <use href="./images/icone.svg#icon-check"></use>
               </svg>
             </span>
-            Погоджуюся з розсилкою та приймаю <a class="user-policy-link" href="">Умови договору</a> 
+            Погоджуюся з розсилкою та приймаю&nbsp;<a class="user-policy-link" href="">Умови договору</a> 
           </label>
           <button type="submit" class="modal-form-submit">Відправити</button>
         </form>
