@@ -769,9 +769,92 @@ body {
     height: 120px;
     padding: 12px 16px;
     resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
     transition: border-color var(--transition-duration) var(--transition-function);
 }
 .modal-form-message:focus {
     outline: none;
     border-color: var(--accent-color);
+}
+.modal-form-message::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-check-desc{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+
+    color: var(--secondary-text-colour);
+}
+.user-policy-link {
+    text-decoration-line: underline;
+    color: var(--accent-color);
+}
+
+/* .modal-form-check-desc::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 0.2px solid #212121;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background-image: url(../images/icone.svg/icon-vector);
+    fill: #000000;
+} */
+
+.modal-form-check:checked + .modal-form-icon-check {
+    opacity: 1;
+}
+
+.modal-form-icon-wrapper {
+    position: relative;
+}
+.modal-form-icon {
+    cursor: pointer;
+    
+}
+.modal-form-icon-check {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+
+.modal-form-submit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 52px;
+    padding-right: 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color-theme-dark);
+    background-color: var(--accent-color);
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+}
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
